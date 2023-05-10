@@ -13,8 +13,10 @@ const Header = () => {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <img src={icono} width="50"
+                    {/* <a class="navbar-brand" href="#"> */}
+                        <img src={icono} width="50"
                             alt="Logo de la pagina web"/>
+                            {/* </a> */}
                     <ul class="navbar-nav d-flex justify-content-center align-items-center ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
