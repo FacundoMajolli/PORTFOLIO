@@ -38,7 +38,7 @@ const Main = () => {
             <img class="hero-imagen-desarrollador rounded-circle" src={2}
                 alt="Foto de Facundo Majolli"/>
             <h1>Hola, soy Facundo Majolli</h1>
-            <h2>Desarrollo sitios web y escribo articulos de programación.</h2>
+            <h2>Desarrollo sitios web y aplicaciones</h2>
         </div>
         <div class="hero-inferior">
             {/* <img class="hero-inferior-imagen img-fluid" src={hero}
@@ -48,13 +48,8 @@ const Main = () => {
     {/* <!-- sobre mi --> */}
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
-            <h2 class="seccion-titulo texto-blanco">Conoce a Facundo Majoli</h2>
-            <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis,
-                voluptatum, maiores vero totam hic dolores similique ipsam modi dolorem, exercitationem numquam
-                facere? Exercitationem libero minus tempore voluptatem! Nesciunt, neque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Architecto at adipisci aliquid quaerat cupiditate perspiciatis,
-                quibusdam labore, earum illo animi magnam. Aut delectus vel voluptatem debitis maiores enim,
-                suscipit assumenda.</p>
+            <h2 class="seccion-titulo texto-blanco">Un poco acerca de mi</h2>
+            <p class="seccion-texto">Soy estudiante de programación, actualmente estoy cursando el 2do año de la carrera de programacion en la Universidad Tecnologica Nacional. Vivo en San Miguel de Tucuman, Argentina. Tengo 23 años .</p>
         </div>
     </section>
     {/* <!-- experiencia --> */}
@@ -63,10 +58,8 @@ const Main = () => {
             <div class="row">
                 <div class="columna col-12 col-md-4">
                     <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Desarrollo web</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis numquam et ad eos quod
-                        quas soluta totam tenetur repudiandae. Ex eos iure assumenda consectetur cumque autem quae
-                        nam veniam in!</p>
+                    <p class="experiencia-titulo">FrontEnd</p>
+                    <p>Realice diversas paginas web mediante lenguajes de programación </p>
                     <div class="badges-contenedor">
                         <span class="badge text-bg-primary">HTML</span>
                         <span class="badge text-bg-primary">CSS</span>
@@ -76,26 +69,22 @@ const Main = () => {
                 </div>
                 <div class="columna col-12 col-md-4">
                     <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Articulos</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis numquam et ad eos quod
-                        quas soluta totam tenetur repudiandae. Ex eos iure assumenda consectetur cumque autem quae
-                        nam veniam in!</p>
+                    <p class="experiencia-titulo">BackEnd</p>
+                    <p>Ademas de desarrollo web poseo conocimientos en lenguajes para desarrollo back</p>
                     <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">Escribir</span>
-                        <span class="badge text-bg-primary">Editar</span>
-                        <span class="badge text-bg-primary">Blog</span>
+                        <span class="badge text-bg-primary">Python</span>
+                        <span class="badge text-bg-primary">C#</span>
+                        
                     </div>
                 </div>
                 <div class="columna col-12 col-md-4">
                     <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Estudios</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis numquam et ad eos quod
-                        quas soluta totam tenetur repudiandae. Ex eos iure assumenda consectetur cumque autem quae
-                        nam veniam in!</p>
+                    <p class="experiencia-titulo">Base de datos</p>
+                    <p>Para realizar los proyectos complemento los programas con bases de datos</p>
                     <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">UTN</span>
-                        <span class="badge text-bg-primary">Dalto</span>
-                        <span class="badge text-bg-primary">FreeCode</span>
+                        <span class="badge text-bg-primary">SQL server</span>
+                        <span class="badge text-bg-primary">Sqlite3</span>
+                        <span class="badge text-bg-primary">MySql</span>
                     </div>
                 </div>
             </div>
@@ -210,31 +199,24 @@ const Main = () => {
     </section>
     {/* <!-- articulos --> */}
     <section class="articulos justify-content-start">
-        <h2 class="seccion-titulo texto-negro">ARTICULOS</h2>
+        <h2 class="seccion-titulo texto-negro">Cursos realizados</h2>
         <div class="card">
             <div class="card-header">
                 Más recientes
             </div>
             <ul class="list-group list-group-flush">
                 {/* <a href="https://www.instagram.com/facundomajolli/" target="_blank"> */}
-                    <li class="list-group-item">El decorador @property en python - como usarlo, ventajas y sintaxis
+                    <li class="list-group-item">Free Code Camp - BOOTSTRAP
                     </li>
                 {/* </a> */}
                 {/* <a href="https://www.instagram.com/facundomajolli/" target="_blank"> */}
-                    <li class="list-group-item">Python tutorial ciclos while - while True ejemplos de sintaxis y
-                        ciclos infinitos</li>
+                    <li class="list-group-item">Free Code Camp - React</li>
                 {/* </a> */}
                 {/* <a href="https://www.instagram.com/facundomajolli/" target="_blank"> */}
-                    <li class="list-group-item">Python leer archivo JSON - como cargar JSON desde un archivo y
-                        procesar dumps</li>
+                    <li class="list-group-item">SoyDalto - SQL</li>
                 {/* </a> */}
                 {/* <a href="https://www.instagram.com/facundomajolli/" target="_blank"> */}
-                    <li class="list-group-item">Python como escribir en un archivo - abrir, leer, escribir y otra
-                        funciones</li>
-                {/* </a> */}
-                {/* <a href="https://www.instagram.com/facundomajolli/" target="_blank"> */}
-                    <li class="list-group-item">¿Para que se usa Python? 10+ usos del lenguaje de programacion
-                        Python</li>
+                    <li class="list-group-item">SoyDalto - Javascript</li>
                 {/* </a> */}
 
             </ul>
