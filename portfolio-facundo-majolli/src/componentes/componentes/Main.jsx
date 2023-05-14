@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../CSS/style.css'
 // import icono from "../../assets/icono.png";
-// import Facundo from "../../assets/2.jpg";
+import facundo from "../../assets/2.jpg";
 // import cliente1 from "../../assets/cliente1.svg";
 // import cliente2 from "../../assets/cliente2.svg";
 // import cliente3 from "../../assets/cliente3.svg";
@@ -29,15 +29,16 @@ import proyecto6 from "../../assets/proyecto6.png";
 // import yo from "../../assets/yo.jpeg";
 // import yoo from "../../assets/yo.png";
 
-const Main = () => {
+
+const Main = (props) => {
 
   return (
     <main>
     <section class="hero align-items-stretch">
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-            <img class="hero-imagen-desarrollador rounded-circle" src={2}
+            <img class="hero-imagen-desarrollador rounded-circle" src={facundo}
                 alt="Foto de Facundo Majolli"/>
-            <h1>Hola, soy Facundo Majolli</h1>
+            <h1>Hola, soy {props.nombre} {props.apellido}</h1>
             <h2>Desarrollo sitios web y aplicaciones</h2>
         </div>
         <div class="hero-inferior">
@@ -46,10 +47,13 @@ const Main = () => {
         </div>
     </section>
     {/* <!-- sobre mi --> */}
+                <div>
+                   
+                </div>
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
             <h2 class="seccion-titulo texto-blanco">Un poco acerca de mi</h2>
-            <p class="seccion-texto">Soy estudiante de programación, actualmente estoy cursando el 2do año de la carrera de programacion en la Universidad Tecnologica Nacional. Vivo en San Miguel de Tucuman, Argentina. Tengo 23 años .</p>
+            <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.universidad}, Argentina. Tengo {props.edad} años .</p>
         </div>
     </section>
     {/* <!-- experiencia --> */}
@@ -305,7 +309,7 @@ const Main = () => {
                         realidad.
                     </div>
                     <div class="col-12 col-md-4">
-                        <a href="mailto:janedoe@micorreo.com">
+                        <a href="mailto:facundomajolli12@gmail.com">
                             <button type="button">
                                 Contacto
                                 <i class="bi bi-envelope-check-fill"></i>
