@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
+
 export const Home = () => {
     
   let datosPerfil = {
@@ -26,7 +27,7 @@ export const Home = () => {
     <div>
       <Header/>
       <Main {...datosPerfil}/>
-      <Footer/>
+      <Footer {...datosPerfil}/>
     </div> 
   );
 };

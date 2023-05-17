@@ -28,17 +28,24 @@ import proyecto5 from "../../assets/proyecto5.png";
 import proyecto6 from "../../assets/proyecto6.png";
 // import yo from "../../assets/yo.jpeg";
 // import yoo from "../../assets/yo.png";
+import { Button, Card } from 'react-bootstrap';
+
 
 
 const Main = (props) => {
 
+    const handleClick =()=>{
+        alert("estoy presionando un h1");
+      }
+
   return (
     <main>
+   
     <section class="hero align-items-stretch">
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
             <img class="hero-imagen-desarrollador rounded-circle" src={facundo}
                 alt="Foto de Facundo Majolli"/>
-            <h1>Hola, soy {props.nombre} {props.apellido}</h1>
+            <h1 onClick={handleClick}>Hola, soy {props.nombre} {props.apellido}</h1>
             <h2>Desarrollo sitios web y aplicaciones</h2>
         </div>
         <div class="hero-inferior">
@@ -47,13 +54,45 @@ const Main = (props) => {
         </div>
     </section>
     {/* <!-- sobre mi --> */}
-                <div>
-                   
-                </div>
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
             <h2 class="seccion-titulo texto-blanco">Un poco acerca de mi</h2>
-            <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.universidad}, Argentina. Tengo {props.edad} años .</p>
+                <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.universidad}, Argentina. Tengo {props.edad} años.</p>
+                <div className="tarjetas">
+            <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Formación</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+            <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Trabajos</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+            <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Hobbys</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </div>
         </div>
     </section>
     {/* <!-- experiencia --> */}
