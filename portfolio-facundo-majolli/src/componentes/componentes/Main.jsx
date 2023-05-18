@@ -26,6 +26,8 @@ import proyecto3 from "../../assets/proyecto3.png";
 import proyecto4 from "../../assets/proyecto4.png";
 import proyecto5 from "../../assets/proyecto5.png";
 import proyecto6 from "../../assets/proyecto6.png";
+import rugby from '../../assets/rugby.jpeg'
+import siprosa2 from '../../assets/siprosa2.jpg'
 // import yo from "../../assets/yo.jpeg";
 // import yoo from "../../assets/yo.png";
 import { Button, Card } from 'react-bootstrap';
@@ -57,39 +59,39 @@ const Main = (props) => {
         <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
             <h2 class="seccion-titulo texto-blanco">Un poco acerca de mi</h2>
-                <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.universidad}, Argentina. Tengo {props.edad} años.</p>
+                <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.ciudad}, Argentina. Tengo {props.edad} años.</p>
                 <div className="tarjetas">
             <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Formación</Card.Title>
+        <Card.Title>FORMACION</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <ul>
+            <li>{props.colegio}</li>
+            <li>{props.tecnicatura}</li>
+          </ul>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Ver más</Button>
       </Card.Body>
     </Card>
             <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={siprosa2} />
       <Card.Body>
-        <Card.Title>Trabajos</Card.Title>
+        <Card.Title>TRABAJO</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          En la actualidad trabajo en el <b>{props.actualidad}</b>  desde hace <b>{props.siprosaTiempo}</b> 
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Ver más</Button>
       </Card.Body>
     </Card>
             <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={rugby} />
       <Card.Body>
-        <Card.Title>Hobbys</Card.Title>
+        <Card.Title>HOBBYS</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Juego al <b>{props.deporte1}</b> me gusta escuchar musica como <b>{props.musica}</b>.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Ver más</Button>
       </Card.Body>
     </Card>
     </div>

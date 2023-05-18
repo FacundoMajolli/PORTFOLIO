@@ -97,7 +97,7 @@ h1{
 
 /* SOBRE MI */
 .sobre-mi{
-    height: 500px;
+    height:730px;
     padding: 10px;
 }
 
@@ -109,10 +109,14 @@ h1{
 .tarjetas{
     display: flex;
     flex-direction: row;
+    width: 700px;
 }
 
 .tarjetas .card{
     margin: 10px;
+}
+.card img{
+    height: 300px;
 }
 
 /* experiencia */

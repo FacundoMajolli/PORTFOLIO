@@ -21,12 +21,29 @@ export const Home = () => {
     ciudad: 'San Miguel de Tucumán',
     provincia:'Tucumán',
   }
+  let trabajos = {
+    actualidad: 'Sistema Provincial de Salud',
+    siprosaTiempo: '1 año',
+    siprosaFuncion:'administrativo',
+    otro:'empresa familiar',
+    familiarTiempo:'1 año'
+    }
+  let formacion = {
+    colegio:'San Francisco',
+    tecnicatura:'Programacion'
+    }
+  let hobbys = {
+    deporte1: 'rugby',
+    deporte2: 'padel',
+    musica:'rock y cachengue',
+    series:'Peaky Blinders'
+    }
 
 
   return (
     <div>
       <Header/>
-      <Main {...datosPerfil}/>
+      <Main {...datosPerfil}{...formacion}{...trabajos}{...hobbys}/>
       <Footer {...datosPerfil}/>
     </div> 
   );
