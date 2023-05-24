@@ -31,6 +31,7 @@ import siprosa2 from '../../assets/siprosa2.jpg'
 // import yo from "../../assets/yo.jpeg";
 // import yoo from "../../assets/yo.png";
 import { Button, Card } from 'react-bootstrap';
+import utn from "../../assets/utnlogo.jpg"
 
 
 
@@ -62,14 +63,12 @@ const Main = (props) => {
                 <p class="seccion-texto">Soy estudiante de {props.estudios}, actualmente estoy cursando el 2do año de la carrera en la {props.universidad}. Vivo en {props.ciudad}, Argentina. Tengo {props.edad} años.</p>
                 <div className="tarjetas">
             <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={utn} />
       <Card.Body>
         <Card.Title>FORMACION</Card.Title>
         <Card.Text>
-          <ul>
-            <li>{props.colegio}</li>
-            <li>{props.tecnicatura}</li>
-          </ul>
+         <p>Mi secundaria fue en el colegio:  <b> {props.colegio}</b>. Actualmente estudio <b>{props.tecnicatura}</b>  en la UTN
+          </p> 
         </Card.Text>
         <Button variant="primary">Ver más</Button>
       </Card.Body>
