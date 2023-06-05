@@ -6,8 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
-
-export const Home = () => {
+const Home = () => {
     
   let datosPerfil = {
     id:1,

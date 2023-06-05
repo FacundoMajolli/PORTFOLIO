@@ -1,38 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../CSS/style.css'
-// import icono from "../../assets/icono.png";
 import facundo from "../../assets/2.jpg";
-// import cliente1 from "../../assets/cliente1.svg";
-// import cliente2 from "../../assets/cliente2.svg";
-// import cliente3 from "../../assets/cliente3.svg";
-// import desarrollador from "../../assets/desarrollador.svg";
-// import desarrollador1 from "../../assets/desarrollador.svg";
-// import desarrollador2 from "../../assets/desarrollador.svg";
-// import desarrollador3 from "../../assets/desarrollador.svg";
-// import desarrollador4 from "../../assets/desarrollador.svg";
-// import desarrollador5 from "../../assets/desarrollador.svg";
-// import desarrollador6 from "../../assets/desarrollador.svg";
-// import desarrollador7 from "../../assets/desarrollador.svg";
-// import desarrollador8 from "../../assets/desarrollador.svg";
-// import desarrollador9 from "../../assets/desarrollador.svg";
-// import desarrollador10 from "../../assets/desarrollador.svg";
-// import hero from "../../assets/hero-inferior.svg";
-// import iconoBlanco from "../../assets/icono-blanco.svg";
-// import icono2 from "../../assets/icono2.png";
-import proyecto1 from "../../assets/proyecto1.png";
-import proyecto2 from "../../assets/proyecto2.png";
-import proyecto3 from "../../assets/proyecto3.png";
-import proyecto4 from "../../assets/proyecto4.png";
-import proyecto5 from "../../assets/proyecto5.png";
-import proyecto6 from "../../assets/proyecto6.png";
 import rugby from '../../assets/rugby.jpeg'
 import siprosa2 from '../../assets/siprosa2.jpg'
-// import yo from "../../assets/yo.jpeg";
-// import yoo from "../../assets/yo.png";
 import { Button, Card } from 'react-bootstrap';
 import utn from "../../assets/utnlogo.jpg"
-
+import { about } from "../../constants/constants";
+import { Link } from "react-router-dom";
+import tictactoe from '../../assets/tictactoe.png';
+import adivina from '../../assets/adivinarNumero.png';
 
 
 const Main = (props) => {
@@ -70,7 +47,7 @@ const Main = (props) => {
          <p>Mi secundaria fue en el colegio:  <b> {props.colegio}</b>. Actualmente estudio <b>{props.tecnicatura}</b>  en la UTN
           </p> 
         </Card.Text>
-        <Button variant="primary">Ver más</Button>
+        <Button variant="primary"><Link to={about}> Ver más </Link></Button>
       </Card.Body>
     </Card>
             <Card style={{ width: '18rem' }}>
@@ -135,112 +112,29 @@ const Main = (props) => {
         </div>
     </section>
     {/* <!-- Proyectos --> */}
-    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-        <h2 class="seccion-titulo texto-negro">Mis Proyectos recientes</h2>
-        <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
-        {/* <!-- galeria de proyectos --> */}
-        <div class="container text-center proyectos-contenedor">
-            <div class="row">
-                {/* <!-- proyecto 1  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto1} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 1</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- PROYECTO 2  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto2} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 2</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- PROYECTO 3  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto3} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 3</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- PROYECTO 4  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto4} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 4</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- PROYECTO 5  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto5} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 5</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- PROYECTO 6  --> */}
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src={proyecto6} alt="Proyecto 1"/>
-                        <div class="overlay">
-                            <p>Proyecto 6</p>
-                            <div class="iconos-contenedor">
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-github"></i></a>
-                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
-                                        class="bi bi-laptop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+    <div className='row mt-1 p-5'>
+        <h2 className='mb-5'>Mis proyectos</h2>
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3'>
+          <div className='card'>
+            <img className="card-img-top" src={tictactoe} alt=""/>
+            <div className="card-body">
+              <h5 className="card-title">Tic Tac Toe</h5>
+              <p className='card-text'>Juego de Tic Tac Toe simple. Desarrollado con HTML, CSS y JS.</p>
             </div>
+          </div>
         </div>
-        {/* <a href="https://github.com/" target="_blank"> */}
-            <button type="button" class="btn btn-info">
-                Ver más proyectos
-                <i class="bi bi-arrow-right-circle-fill"></i>
-            </button>
-            {/* </a> */}
-    </section>
+
+        <div className='col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3'>
+          <div className='card'>
+            <img src={adivina} alt="" className="card-img-top" />
+            <div className="card-body">
+              <h5 className='card-title'>Juego: Adivinar nùmero</h5>
+              <div className="card-text">Desarrollado con HTML, CSS, JS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     {/* <!-- articulos --> */}
     <section class="articulos justify-content-start">
         <h2 class="seccion-titulo texto-negro">Cursos realizados</h2>
